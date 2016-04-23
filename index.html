@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>μ css framework</title>
+    <link rel="stylesheet" href="mu.css" />
+    <style>
+    .row.colorize .c {
+      background: #f4f4f4;
+      border: 1px solid #8cf;
+    }
+    ol li {
+      margin: 20px 0;
+    }
+    pre {
+      font-size: 16px;
+    }
+
+    /* Customization */
+    button.primary {
+      color: #fff;
+      background: #19e;
+    }
+    button.large {
+      font-size: 18px;
+      padding: 15px 32px;
+    }
+    button.round {
+      border-radius: 6px;
+    }
+    button.outline {
+      background: transparent;
+      border: 2px solid #444;
+    }
+
+    table.zebra tbody tr:nth-child(2n+1) {
+      background-color: #f4f4f4;
+    }
+    table.bordered, table.bordered th, table.bordered td {
+      border: 1px solid #ddd;
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>This is a <em>μ</em> website.</h1>
+    </header>
+
+    <h2>
+      This website uses the μ css framework.
+    </h2>
+    <p>
+      <strong>The μ framework is just 1 kb.</strong>
+    </p>
+    <p>
+      Inpired by the <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a>, using μ css framework is simple <em>as fuck</em>.
+    </p>
+    <p>
+      As the motherfuckingwebsite, μ css framework:
+    </p>
+    <ul>
+      <li>is lightweight and loads fast</li>
+      <li>fits on all your shitty screens</li>
+      <li>looks the same in all your shitty browsers</li>
+      <li>accessible to every asshole that visits your site</li>
+      <li>legible and gets your fucking point across</li>
+    </ul>
+    <p>
+      No more explanations needed, try it out and if required check the source code of this page.
+    </p>
+
+    <hr>
+
+    <h2>Show room</h2>
+
+    <h3>Typography</h3>
+
+    <h1>H1 title</h1>
+    <h2>H2 title</h2>
+    <h3>H3 title</h3>
+    <h4>H4 title</h4>
+    <h5>H5 title</h5>
+    <p>
+      Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <h3>Button</h3>
+    <button>Hello World</button>
+
+    <h3>Link</h3>
+    <a href="github.com">Github</a>
+
+    <h3>Separator</h3>
+    <hr>
+
+    <h3>Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Celestial body</th>
+          <th>Angular diameter</th>
+          <th>Relative size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sun</td>
+          <td>31′31″ – 32′33″</td>
+          <td>30–31 times the maximum value for Venus</td>
+        </tr>
+        <tr>
+          <td>Moon</td>
+          <td>29′20″ – 34′6″</td>
+          <td>28–32.5 times the maximum value for Venus</td>
+        </tr>
+        <tr>
+          <td>Helix Nebula</td>
+          <td>about 16′ by 28′</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Code</h3>
+    <code>print("Hello world")</code>
+
+    <pre>import "earth"
+
+void main() {
+    print("Hello world")
+}</pre>
+
+    <h3>Grid</h3>
+    <div class="row colorize">
+        <div class="c g2">g2</div>
+        <div class="c g2">g2</div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g2 m2">g2 m2</div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g3">g3</div>
+        <div class="c g3">g3</div>
+        <div class="c g3">g3</div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g3 m3">g3 m3</div>
+        <div class="c g3">g3</div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g3 m3-2">g3 m3-2</div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g2">
+          <div class="row">
+              <div class="c g2">g2</div>
+              <div class="c g2">g2</div>
+          </div>
+        </div>
+        <div class="c g2">
+          <div class="row">
+              <div class="c g2 m2">g2 m2</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row colorize">
+        <div class="c g2">
+          <div class="row">
+              <div class="c g3 m3">g3 m3</div>
+          </div>
+        </div>
+        <div class="c g2">
+          <div class="row">
+              <div class="c g3 m3-2">g3 m3-2</div>
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Customization</h2>
+
+    <p>
+      Everything is really easy to customize, here some examples:
+    </p>
+
+    <h3>Buttons</h3>
+
+    <div class="row">
+      <div class="c g2">
+        <ol>
+          <li>
+            <button class='primary'>Hello World</button>
+          </li>
+          <li>
+            <button class='large'>Hello World</button>
+          </li>
+          <li>
+            <button class='large primary round'>Hello World</button>
+          </li>
+          <li>
+            <button class='outline'>Hello World</button>
+          </li>
+        </ol>
+      </div>
+      <div class="c g2">
+        <pre>button.primary {
+  color: #fff;
+  background: #19e;
+}
+button.large {
+  font-size: 18px;
+  padding: 15px 32px;
+}
+button.round {
+  border-radius: 6px;
+}
+button.outline {
+  background: transparent;
+  border: 2px solid #444;
+}</pre>
+      </div>
+    </div>
+
+
+        <h3>Tables</h3>
+
+        <div class="row">
+          <div class="c g2">
+            <table class="zebra">
+              <thead>
+                <tr>
+                  <th>Celestial body</th>
+                  <th>Angular diameter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sun</td>
+                  <td>31′31″ – 32′33″</td>
+                </tr>
+                <tr>
+                  <td>Moon</td>
+                  <td>29′20″ – 34′6″</td>
+                </tr>
+                <tr>
+                  <td>Helix Nebula</td>
+                  <td>about 16′ by 28′</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <table class="bordered">
+              <thead>
+                <tr>
+                  <th>Celestial body</th>
+                  <th>Angular diameter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sun</td>
+                  <td>31′31″ – 32′33″</td>
+                </tr>
+                <tr>
+                  <td>Moon</td>
+                  <td>29′20″ – 34′6″</td>
+                </tr>
+                <tr>
+                  <td>Helix Nebula</td>
+                  <td>about 16′ by 28′</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="c g2">
+            <pre>table.zebra tbody tr:nth-child(2n+1) {
+  background-color: #f3f3f3;
+}
+
+table.bordered, table.bordered th, table.bordered td {
+  border: 1px solid #ddd;
+}</pre>
+          </div>
+        </div>
+
+  </body>
+</html>
