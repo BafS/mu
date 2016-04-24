@@ -1,5 +1,5 @@
 /*
-| The mu framework v0.1.1
+| The mu framework v0.2.0
 */
 *, *:after, *:before {
   box-sizing: border-box;
@@ -21,8 +21,8 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  text-decoration: none;
   color: #06c;
+  text-decoration: none;
 }
 
 a:hover {
@@ -32,20 +32,17 @@ a:hover {
 
 hr {
   border: 0;
-  margin: 20px 0;
-  border-top: 1px solid #ccc;
+  margin: 25px 0;
 }
 
 table {
-  width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
   text-align: left;
-  font-size: 16px;
   padding-bottom: 25px;
 }
 
-td, tr {
+td, th, hr {
   border-bottom: 1px solid #ddd;
 }
 
@@ -56,11 +53,16 @@ button {
   font-size: 14px;
 }
 
-button:hover {
-  background: #ccc;
+input, table {
+  font-size: 16px;
 }
 
-code, pre {
+input, td, th {
+  padding: 5px;
+  vertical-align: bottom;
+}
+
+code, pre, button:hover {
   background: #eee;
 }
 
@@ -91,7 +93,7 @@ pre {
   float: left;
 }
 
-.g2, .g3, .g3-2, .m2, .m3, .m3-2 {
+table, .g2, .g3, .g3-2, .m2, .m3, .m3-2 {
   width: 100%;
 }
 
