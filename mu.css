@@ -1,14 +1,11 @@
 /*
 | The mu framework v0.2.0
 */
-*, *:after, *:before {
-  box-sizing: border-box;
-}
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 40px auto;
-  max-width: 760px;
+  max-width: 720px;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
@@ -91,6 +88,7 @@ pre {
 
 .row .c {
   float: left;
+  box-sizing: border-box;
 }
 
 table, .g2, .g3, .g3-2, .m2, .m3, .m3-2 {
