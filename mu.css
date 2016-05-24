@@ -1,16 +1,11 @@
 /*
-| The mu framework
+| The mu framework v0.2.0
 */
-*, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 40px auto;
-  max-width: 760px;
+  max-width: 720px;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
@@ -23,8 +18,8 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  text-decoration: none;
   color: #06c;
+  text-decoration: none;
 }
 
 a:hover {
@@ -34,20 +29,17 @@ a:hover {
 
 hr {
   border: 0;
-  margin: 20px 0;
-  border-top: 1px solid #ccc;
+  margin: 25px 0;
 }
 
 table {
-  width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
   text-align: left;
-  font-size: 16px;
   padding-bottom: 25px;
 }
 
-td, tr {
+td, th, hr {
   border-bottom: 1px solid #ddd;
 }
 
@@ -58,7 +50,16 @@ button {
   font-size: 14px;
 }
 
-code, pre {
+input, table {
+  font-size: 16px;
+}
+
+input, td, th {
+  padding: 5px;
+  vertical-align: bottom;
+}
+
+code, pre, button:hover {
   background: #eee;
 }
 
@@ -87,9 +88,10 @@ pre {
 
 .row .c {
   float: left;
+  box-sizing: border-box;
 }
 
-.g2, .g3, .g3-2, .m2, .m3, .m3-2 {
+table, .g2, .g3, .g3-2, .m2, .m3, .m3-2 {
   width: 100%;
 }
 
