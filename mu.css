@@ -1,5 +1,6 @@
 /*
 | The mu framework v0.2.1
+| BafS 2016
 */
 *, *:after, *:before {
   box-sizing: border-box;
@@ -21,12 +22,12 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  color: #06c;
+  color: #07c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #049;
+  color: #059;
   text-decoration: underline;
 }
 
@@ -46,7 +47,7 @@ td, th, hr {
   border-bottom: 1px solid #ddd;
 }
 
-button {
+button, select {
   background: #ddd;
   border: 0;
   padding: 9px 20px;
@@ -69,6 +70,10 @@ code, pre, button:hover {
 pre {
   padding: 8px;
   white-space: pre-wrap;
+}
+
+textarea {
+  border-color: #ccc;
 }
 
 /*
@@ -96,6 +101,7 @@ table, .g2, .g3, .g3-2, .m2, .m3, .m3-2 {
 
 /*
 | Media queries
+| Responsive grid, mobile first
 */
 @media (min-width: 768px) {
   .g2 {
