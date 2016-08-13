@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>μ css framework</title>
-    <link rel="stylesheet" href="mu.min.css" />
+    <link rel="stylesheet" href="mu.min.css">
     <style>
     .row.colorize .c {
       background: #f4f4f4;
@@ -28,7 +28,7 @@
     /* Customization */
     button.primary {
       color: #fff;
-      background: #19e;
+      background: #18e;
     }
     button.large {
       font-size: 18px;
@@ -71,7 +71,7 @@
     </p>
     <ul>
       <li>is lightweight and loads fast</li>
-      <li>fits on all your shitty screens</li>
+      <li>fits on all your shitty screens (and it's mobile first)</li>
       <li>looks the same in all your shitty browsers</li>
       <li>accessible to every asshole that visits your site</li>
       <li>legible and gets your fucking point across</li>
@@ -95,7 +95,6 @@
       Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
 
-
     <h3>Link</h3>
     <a href="https://github.com/BafS/mu">Github</a>
 
@@ -106,7 +105,7 @@
     <input type="text" placeholder="Text..." /><br>
 
     <h3>Textarea</h3>
-    <textarea>Some text</textarea>
+    <textarea></textarea>
 
     <h3>Select</h3>
     <select>
@@ -164,6 +163,23 @@ void main() {
 }</pre>
 
     <h3>Grid</h3>
+
+    <h4>Basic example</h4>
+
+    <div class="row colorize">
+        <div class="c g2">First column</div>
+        <div class="c g2">Second column</div>
+    </div>
+
+    <pre>&lt;div class="row"&gt;
+  &lt;div class="c g2"&gt;First column&lt;/div&gt;
+  &lt;div class="c g2"&gt;Second column&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    <h4>More combinations</h4>
+
+    <!-- .colorize was added to show the columns -->
+
     <div class="row colorize">
         <div class="c g2">g2</div>
         <div class="c g2">g2</div>
@@ -214,6 +230,10 @@ void main() {
           </div>
         </div>
     </div>
+
+    <p>
+      The possibilities are endless...
+    </p>
 
     <hr>
 
@@ -290,7 +310,7 @@ button.outline {
               </tbody>
             </table>
 
-            <hr>
+            <br>
 
             <table class="bordered">
               <thead>
@@ -321,7 +341,6 @@ button.outline {
 }
 
 
-
 table.bordered, table.bordered th, table.bordered td {
   border: 1px solid #ddd;
 }</pre>
@@ -330,7 +349,7 @@ table.bordered, table.bordered th, table.bordered td {
 
     <div class="footer">
       <em>
-        Made with love by <a href="https://github.com/BafS">BafS</a>
+        Made with love (and brutalism) by <a href="https://github.com/BafS">BafS</a>
       </em>
     </div>
   </body>
