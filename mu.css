@@ -121,3 +121,47 @@ pre {
     margin-left: 66.66%;
   }
 }
+/* Added new button types: primary and destructive */
+button.primary {
+ 	color: #19e;
+	background: #fff;
+	text-transform: uppercase;
+	border: 2px solid #19e;
+}
+button.large {
+  	font-size: 18px;
+  	padding: 15px 32px;
+}
+button.round {
+  	border-radius: 6px;
+}
+button.destructive {
+	color: #C40500;
+	background: #fff;
+	border: 2px solid #C40500;
+	text-transform: uppercase;
+}
+
+/* Added hover effects for the buttons */
+button.primary:hover {
+	background: #19e;
+	color: #fff;
+	border: 2px solid #fff;
+}
+button.destructive:hover {
+	background: #C40500;
+	color: #fff;
+	border: 2px solid #fff;;
+}
+/* Customized input tag */
+input {
+	border: none;
+	border-bottom: solid 2px #031E2E;
+	transition: border 0.3s;
+	color: #000;
+}
+input:focus,
+input.focus {
+	border-bottom: solid 3px #19e;
+	color: #19e;
+}
