@@ -1,0 +1,21 @@
+{
+  "name": "@bafs/mu",
+  "version": "0.3.1",
+  "description": "The μ css framework — a 1 ko css file.",
+  "main": "mu.min.css",
+  "browser": "mu.min.css",
+  "scripts": {
+    "min": "crass mu.css --optimize | cssnano > mu.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BafS/mu.git"
+  },
+  "author": "BafS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BafS/mu/issues"
+  },
+  "homepage": "https://github.com/BafS/mu#readme"
+}
