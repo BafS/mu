@@ -1,17 +1,15 @@
 /*
-| The mu framework v0.3
-| BafS 2016-2017
+| The mu framework v0.3.1
+| BafS 2016-2018
 */
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font: 18px/1.6 Georgia, "Times New Roman", Times, serif;
   margin: 40px auto;
   max-width: 760px;
-  line-height: 1.6;
-  font-size: 18px;
   color: #444;
   padding: 0 20px;
 }
